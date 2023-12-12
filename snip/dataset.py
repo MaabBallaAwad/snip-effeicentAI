@@ -14,9 +14,9 @@ class Dataset(object):
         if self.datasource == 'mnist':
             self.num_classes = 10
             self.dataset = mnist.read_data(os.path.join(self.path_data, 'MNIST'))
-        elif self.datasource == 'cifar-10':
-            self.num_classes = 10
-            self.dataset = cifar.read_data(os.path.join(self.path_data, 'cifar-10-batches-py'))
+        elif self.datasource == 'cifar-100-python':
+            self.num_classes = 100
+            self.dataset = cifar.read_data(os.path.join(self.path_data, 'cifar-100-python'))
         else:
             raise NotImplementedError
         self.split_dataset('train', 'val', int(self.dataset['train']['input'].shape[0] * 0.1),
@@ -71,3 +71,4 @@ class Dataset(object):
         ind_remain = indices[number:]
         self.dataset[target] = {k: self.dataset[source][k][ind_target] for k in keys}
         self.dataset[source] = {k: self.dataset[source][k][ind_remain] for k in keys}
+
