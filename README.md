@@ -12,7 +12,7 @@ This repository contains code for the paper [SNIP: Single-shot Network Pruning b
 Put the following datasets in your preferred location (e.g., `./data`).
 * [MNIST](http://yann.lecun.com/exdb/mnist/)
 * [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
-* [CIFAR-100]
+* [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 ## Usage
 To run the code (LeNet on MNIST by default):
