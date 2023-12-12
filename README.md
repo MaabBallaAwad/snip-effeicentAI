@@ -14,6 +14,7 @@ Put the following datasets in your preferred location (e.g., `./data`).
 * [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html)
 * [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html)
 
+Create afile called data in snip and download the cifar-100-python file in it
 ## Usage
 To run the code (LeNet on MNIST by default):
 ```
