@@ -8,6 +8,8 @@ This repository contains code for the paper [SNIP: Single-shot Network Pruning b
 * python 2.7 or python 3.6
 * packages in `requirements.txt`
 
+conda create -n snip python=3.7
+pip install -r requirements.txt
 ### Datasets
 Put the following datasets in your preferred location (e.g., `./data`).
 * [MNIST](http://yann.lecun.com/exdb/mnist/)
